@@ -1,0 +1,10 @@
+build/
+.classpath
+.project
+.settings/*
+.gradle/
+eclipse/
+bin/
+TeleportStations.iws
+TeleportStations.iml
+TeleportStations.ipr

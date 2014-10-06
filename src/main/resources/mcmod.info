@@ -1,0 +1,16 @@
+[
+{
+  "modid": "examplemod",
+  "name": "ExampleMod",
+  "description": "Example",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Adanaran"],
+  "credits": "Forge",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
