@@ -12,13 +12,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ClientProxy extends CommonProxy {
     @Override
     public void registerRenderInformation() {
-        /*Minecraft.getMinecraft().getRenderItem().getItemModelMesher().getModelManager().getBlockModelShapes()
-                .func_178123_a(ExampleMod.exampleBlock);*/
-
         Item item = GameRegistry.findItem("examplemod", ExampleMod.exampleBlock.getUnlocalizedName());
-
         ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
-        mesher.register(item, 0, new ModelResourceLocation(ExampleMod.exampleBlock.getUnlocalizedName(),
+        String name = "examplemod:" + ExampleMod.exampleBlock.getUnlocalizedName();
+
+        mesher.register(item, 0, new ModelResourceLocation(name,
                 "inventory"));
     }
 }
